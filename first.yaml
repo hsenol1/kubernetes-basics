@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod 
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.25.1
+    ports:
+    - containerPort: 80
+
+
+# creating pod. this is not the case in general, 
+# but for learning purpose of course.
+
+# to create it do below in terminal
+
+## kubectl apply -f NAMEOFYAMLFILE
+## then see nodes
+
+## kubectl get nodes
+
